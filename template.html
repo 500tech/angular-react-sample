@@ -1,0 +1,8 @@
+<h2>Angular Directives <span class="delay">{{ speed.delay / 1000 }} ms</span></h2>
+<table>
+  <tr ng-repeat="i in speed.getNumber() track by $index">
+    <td ng-repeat="j in speed.getNumber() track by $index">
+      <div class="cell" ng-style="{ 'width' : speed.number + 'px', 'height': speed.number + 'px' }"></div>
+    </td>
+  </tr>
+</table>
